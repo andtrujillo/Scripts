@@ -1,0 +1,4 @@
+#!/bin/bash
+vim $1 -c "%s/\s\+$//e|:set ff=unix|:wq" && betty $1
+
+# Place in /usr/local/bin after chmod +x ..
